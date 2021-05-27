@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For in, for of, for each, while, do-while</title>
+</head>
+<body>
+    <h1>For in, for of, for each, while, do-while</h1>
+    <script>
+        // For loop : 
+        let arr=new Array(1,2,null,'sasi');
+        let i=0;
+        // for(i=0;i<4;i++)
+        // console.log(arr[i]);
+        
+        let name = ["sasi","ramesh","raj"]
+        // for (let index = 0; index < name.length; index++) {
+        //     let element = name[index];
+        //     console.log(element);  
+        // }
+
+        // For Of loop : 
+        // for(element of arr)
+        // console.log(element);
+
+        // For Each loop : 
+
+        // name.forEach(function f(element){
+        //     console.log("Name is : "+element);
+        // });
+
+        // name.forEach(element => {
+        //     console.log("Name is : "+element);
+        // });
+
+        // For Objects : 
+
+        let employee ={
+            name : "sasi",
+            roll:24,
+            clg:"srit",
+        }
+
+        // For In loop : specifically for Objects
+
+        // for (key in employee) {
+        //     console.log(key+" is : "+employee[key]);
+        // }
+
+        // While loop : 
+
+        i=0;
+        while(i<4)
+        {
+            console.log(arr[i]);
+            i++;
+        }
+        i=5;
+        do{
+            console.log(i+" is less than 4");
+            i++;
+        }while(i<4);
+    </script>
+</body>
+</html>

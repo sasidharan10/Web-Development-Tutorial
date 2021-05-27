@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and z-index</title>
+    <style>
+        .box {
+            visibility: visible;
+            border: 4px solid black;
+            width: 50px;
+            height: 50px;
+        }
+
+        #box1 {
+            background-color: blue;
+            position: relative;
+            top: 20px;
+            z-index: 2;
+            /*to denote the weightage and which should overlay other*/
+        }
+
+        #box2 {
+            background-color: red;
+            visibility: hidden;
+            /* Only element is hidden and spaces are shown*/
+            position: relative;
+            z-index: 1;
+        }
+
+        #box3 {
+            display: none;
+            /*Element with its places are hidden*/
+
+            background-color: green;
+            position: relative;
+        }
+
+        #box4 {
+            background-color: yellow;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Visibility and z-index</h2>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+
+</html>

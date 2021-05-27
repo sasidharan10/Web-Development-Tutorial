@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings and string functions</title>
+</head>
+<body>
+    <div class="con">
+        <h1>JavaScript variables and Operators</h1>
+        <div id="content"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, earum, consequatur architecto totam ea nihil ex ducimus sint deleniti quod inventore nobis perferendis?</p>
+    </div>
+    <script>
+        var string="Sasi's";
+        var a='i"am';
+        var b="friend";
+        // String concatenation
+        console.log(string+a+b);
+        // Using variables inside a statement ${}
+        console.log(`${b} is a good boy for ${string}`);
+        // finding length of a variable using ".length" function
+        var len=string.length;
+        console.log(`Length of string is : ${len}`);
+        // Escape sequences
+        console.log("Hello World\t tab\nThis is next line\b");
+        // String constructor (S caps)
+        var y=new String("Sasi's");
+        console.log(y);
+        document.getElementById(`content`).innerHTML=`This is a dynamic html code`;
+    </script>
+</body>
+</html>

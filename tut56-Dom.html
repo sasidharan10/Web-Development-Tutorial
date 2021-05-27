@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating DOM by JS</title>
+</head>
+
+<body>
+    <div class="con" id="main">
+        <ul id="nav">
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Services</li>
+            <li>Conntact Us</li>
+        </ul>
+    </div>
+    <div class="con">
+        Another Container
+    </div>
+    <script>
+        let main = document.getElementById(`main`);
+        console.log(main);
+        let nav = document.getElementById(`nav`);
+        console.log(nav);
+        let con = document.getElementsByClassName(`con`);
+        console.log(con);
+        // let sel=document.querySelector(`#nav`);    // selects first container
+        // console.log(sel);
+        // let sel1 = document.querySelector(`#nav>li`);
+        // console.log("Selected query : ", sel1);
+        let selall = document.querySelectorAll(`#nav>li`);  //selall[0].innerHTML="My Home";
+        console.log("Selected query : ", selall);
+    </script>
+</body>
+
+</html>

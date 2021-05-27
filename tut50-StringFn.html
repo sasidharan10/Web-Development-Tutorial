@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String Functions</title>
+</head>
+<body>
+    <h1>JavaScript String Functions</h1>
+    <script>
+        var str="This is a string";
+        console.log(str);
+        // First occurence of 's'
+        var pos=str.indexOf("s");
+        // console.log(pos);
+
+        // Last occurence of 's'
+        pos = str.lastIndexOf("s");
+        // console.log(pos);
+
+        // slicing a string
+        var sub=str.slice(0,6);  //can take -ve value
+        // console.log(sub);
+        sub=str.substring(0,6);// cannot take -ve value
+        // console.log(sub);
+        sub=str.substr(3,3);  // (starting index,size)    
+        // console.log(sub);
+
+        var rep=str.replace("a","Newstring");  //replaced but the oc is not affected
+        // console.log(str);
+        // console.log(rep);
+
+        // Upper and Lower case
+
+        // console.log(str.toUpperCase());
+        // console.log(str.toLowerCase());
+
+        // console.log(str.concat(" got concated"));  // concatenation
+
+        var space = "    space at   front and back      ";
+        // console.log(space);
+        // console.log(space.trim());
+
+        // To extract any character
+
+        console.log(str.charAt(0));
+        console.log(str.charCodeAt(0));
+
+        console.log(str[6]);  // giving the char at given index
+        </script>
+</body>
+</html>

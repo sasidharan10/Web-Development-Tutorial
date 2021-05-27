@@ -1,0 +1,17 @@
+{
+  "name": "tut69",
+  "version": "1.0.0",
+  "description": "this is good",
+  "main": "tut69.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "sasi",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

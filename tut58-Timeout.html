@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetTimeOut nad ClearTimeOut</title>
+</head>
+<body>
+    <h1>SetTimeOut and SetInterval</h1>
+    <div class="con">
+        <h3>Time now is : <span id="time"></span></h3>
+    </div>
+    <script>
+        // setTimeout = Allows to run a function after a time "ONLY ONCE".  
+        // setInterval = Allows to run a function multiple times after given interval.  
+        function greet(name,bye)
+        {
+            console.log("Hello World "+name +" and "+bye);
+        }
+        let timeout=setTimeout(greet, 3000,"sasi","Take care");
+        // note : Syntax = setTimeout(function,time);
+        // only give function name 
+       clearTimeout(timeout);
+       let timeInterval = setInterval(greet, 1000);
+       clearInterval(timeInterval);
+
+       function displaytime(){
+           let time = new Date();
+            console.log(time);
+            document.getElementById(`time`).innerHTML=time;
+       }
+       //displaytime(); // displays time (not live)
+       let live= setInterval(displaytime, 1000);
+       // now clearing : 
+    //    clearTimeout(live);
+    </script>
+</body>
+</html>

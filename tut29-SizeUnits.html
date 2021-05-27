@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size Units</title>
+    <style>
+        html{
+            font-size: 10px;
+        }
+        .con{
+            /* height: 300px;
+            width: 300px; */
+            height: 100vh;
+            /* viewport height gives the height of the display */
+            width: 50vw;
+            /* viewport width gives the width of the display */
+            margin: auto;
+            border: 2px solid yellowgreen;
+            font-size: 10px;
+            text-align: center;
+        }
+        #first{
+            font-size: 2em; 
+            /* em size is parent size multiplied by value of em and it changes whenever font size is changes */ 
+            padding: 2em;
+        }
+        #second{
+            font-size: 2rem;
+            /* rem is html size multiplied by rem value and its value always remain based on html size */
+            padding: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <h1 id="first">This is First para</h1>
+        <h1 id="second">This is Second para</h1>
+        <h1 id="third">This is Third para</h1>
+    </div>
+</body>
+</html>

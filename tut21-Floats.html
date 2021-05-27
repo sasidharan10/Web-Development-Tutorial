@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floats and clear</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: rgb(188, 233, 174);
+            width: 1000px;
+            margin: 20px auto;
+            border: 17px ridge rgb(54 167 32);
+        }
+
+        .para {
+            text-align: justify;
+            padding: 10px 10px;
+            border: 10px double rgb(54 167 32);
+            margin: 10px 10px;
+        }
+
+        h4,h2 {
+            text-align: center;
+        }
+
+        #first {
+            float: left;
+            width: 50%;
+            padding: 0px 10px 40px 10px;
+        }
+
+        #second {
+            float: right;
+            width: 45%;
+            margin: 6px 14px;
+        }
+
+        #third {
+            float: both;
+            width: 95%;
+            clear: both;
+            margin: 10px auto;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>Welcome to my page</h2>
+        <div id="first" class="para">
+            <h4>Introduction</h4>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita temporibus aspernatur accusantium laborum
+            saepe perferendis veritatis vitae dolorem, sequi alias, quae porro dignissimos, maxime consequatur
+            blanditiis sed fugit quaerat repellendus veniam. Quis incidunt harum ipsam molestias possimus quas rem
+            eveniet?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quaerat iure molestiae adipisci
+            necessitatibus dolores perferendis laudantium! Perferendis dolores esse quia, sed, voluptatibus possimus
+            molestiae voluptas aliquam ipsam, provident suscipit.
+        </div>
+        <div id="second" class="para">
+            <h4>Content</h4>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita temporibus aspernatur accusantium laborum
+            saepe perferendis veritatis vitae dolorem, sequi alias, quae porro dignissimos, maxime consequatur
+            blanditiis sed fugit quaerat repellendus veniam. Quis incidunt harum ipsam molestias possimus quas rem
+            eveniet?Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, commodi sapiente ratione ducimus
+            cum sunt culpa quaerat deserunt voluptatem velit amet cumque ut libero repellendus harum natus unde dolorum
+            ipsa.
+        </div>
+        <div id="third" class="para">
+            <h4>About Us</h4>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita temporibus aspernatur accusantium laborum
+            saepe perferendis veritatis vitae dolorem, sequi alias, quae porro dignissimos, maxime consequatur
+            blanditiis sed fugit quaerat repellendus veniam. Quis incidunt harum ipsam molestias possimus quas rem
+            eveniet?
+        </div>
+    </div>
+</body>
+
+</html>

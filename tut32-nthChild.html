@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and nth child</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        a[target] {
+
+            font-size: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            background-color: rgb(235, 150, 135);
+        }
+
+        a[target="_blank"] {
+            background-color: rgb(93, 211, 211);
+        }
+
+        input[type="text"] {
+            border: 2px solid yellowgreen;
+            padding: 4px;
+            margin: 4px;
+        }
+
+        input[type="password"] {
+            border: 2px solid rgb(110, 43, 235);
+            padding: 4px;
+            margin: 4px;
+        }
+
+        input[type="email"] {
+            border: 2px solid rgb(241, 59, 83);
+            padding: 4px;
+            margin: 4px;
+        }
+        li:nth-child(odd){
+            background-color: rgb(245, 151, 245);
+        }
+        li:nth-child(even){
+            background-color: rgb(134, 222, 248);
+        }
+        li:nth-child(4n+0){
+            background-color: rgb(231, 153, 98);
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h2>Attribute and nth child</h2>
+    <a href="https://www.google.com" target="_blank">Google</a>
+    <a href="https://www.yahoo.com" target="_self">Yahoo</a>
+    <form action="" class="info">
+        <input type="text" placeholder="Enter your name">
+        <input type="password" placeholder="Enter your password">
+        <input type="email" placeholder="Enter your email">
+    </form>
+    <ul>
+        <li class="item">Item 1</li>
+        <li class="item">Item 2</li>
+        <li class="item">Item 3</li>
+        <li class="item">Item 4</li>
+        <li class="item">Item 5</li>
+        <li class="item">Item 6</li>
+        <li class="item">Item 7</li>
+        <li class="item">Item 8</li>
+        <li class="item">Item 9</li>
+        <li class="item">Item 10</li>
+    </ul>
+
+</body>
+
+</html>

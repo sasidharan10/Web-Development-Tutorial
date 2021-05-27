@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope and Conditional Statements</title>
+</head>
+
+<body>
+    <h1>Scope and Conditional Statements</h1>
+    <script>
+        var str1 = "This is a string";
+        var str1 = "This is also a string";
+        // var doesn't give error when re-declared (disadvantage)
+        // console.log(str1);
+        let a = "the";  // gives error if re-declared
+        {
+            let a = "is";
+            console.log(a);
+        }
+        console.log(a);
+
+        const b = "Cannot be changed";  //value cannot be changed
+
+        // if-else conditions : 
+
+        let age = 40;
+        if (age == 20) {
+            console.log(`age = ${age}`);
+        }
+        else if (age == 30) {
+            console.log(`age = ${age}`);
+        }
+        else {
+            console.log(`age = ${age}`);
+        }
+
+        // Switch case : 
+        
+        let cup = 3;
+        switch (cup) {
+            case 1:
+                console.log(`cup = ${cup}`);
+                break;
+            case 2:
+                console.log(`cup = ${cup}`);
+                break;
+            default:
+                console.log(`cup = ${cup}`);
+                break;
+        }
+    </script>
+</body>
+
+</html>

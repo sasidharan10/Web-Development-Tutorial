@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        .con {
+
+            border: 4px solid black;
+            display: flex;
+            /* initialize as flex container */
+            height: 400px;
+            width: 100%;
+
+            /* FLEX PROPERTIES FOR A CONTAINER */
+
+            /* Flex direction  */
+
+            flex-direction: row;
+            /* Elements are aligned in row (Default) */
+            /* flex-direction: column; */
+            /* Elements are aligned in Column */
+            /* flex-direction: row-reverse; */
+            /* Elements are aligned in row-reverse */
+            /* flex-direction: column-reverse; */
+            /* Elements are aligned in row */
+
+            /* flex-wrap */
+
+            flex-wrap: nowrap;
+            /* Elements are as it is (Default) */
+            /* flex-wrap: wrap; */
+            /* Elements are Wrapped */
+            /* flex-wrap: wrap-reverse; */
+            /* Elements are Wrapped in reverse*/
+
+            /* flex-flow ( Short-hand for flex direction and flex wrap ) */
+
+            /* flex-flow: row wrap; */
+            /* Elements are aligned in row and Wrapped */
+            /* flex-flow: row-reverse wrap; */
+            /* Elements are aligned in row-reverse and Wrapped */
+            /* flex-flow: column wrap; */
+
+            /* justify-contents */
+            /* Gives different Allignments to align contents HORIZONTALLY */
+
+            /* justify-content: center; */
+            /* Alligns contents to the center */
+            /* justify-content: flex-start; */
+            /* Alligns contents from left */
+            /* justify-content: flex-end; */
+            /* Alligns contents from right */
+            /* justify-content: space-between; */
+            /* Alligns contents by giving equal spaces between them*/
+            /* justify-content: space-evenly; */
+            /* Alligns contents by giving equal spaces including edges*/
+            /* justify-content: space-around; */
+            /* Alligns contents by giving equal spaces for each element around it*/
+
+            /* align-items */
+            /* Gives different Allignments to align contents VERTICALLY */
+
+            /* align-items: center; */
+            /* Alligns contents to the center (Vertically)*/
+            /* align-items: flex-start; */
+            /* Alligns contents from top (Vertically)*/
+            /* align-items: flex-end; */
+            /* Alligns contents from bottom (Vertically)*/
+            /* align-items: stretch; */
+            /* Alligns contents by giving equal spaces between them */
+
+        }
+
+        .item {
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            background-color: rgb(228, 152, 139);
+            margin: 8px;
+            padding: 8px;
+
+        }
+
+        #item1 {
+            /* Flex properties for a Flex item */
+            order: 1;
+            /* Higher the order, moves to last in the container  */
+            /* flex-grow: 2; */
+            /* Higher the weight,more it grows than other item */
+            /* flex-shrink: 2; */
+            /* Higher the weight,more it shrinks than other item */
+            flex-basis: 100px;
+            /* When flex-direction is set to row, flex-basis will control the width */
+            /* When flex-direction is set to column, flex-basis will control the height */
+            flex: 2 2 100px;
+
+        }
+
+        #item2 {
+            order: 2;
+            /* flex-grow: 3; */
+            /* flex-shrink: 3; */
+        }
+
+        #item3 {
+            order: 3;
+            align-self: center;
+            /* Alligns that element to the center */
+            /* align-self:flex-start; */
+            /* Alligns that element to the top */
+            /* align-self:flex-end; */
+            /* Alligns that element to the bottom */
+            /* align-self: stretch; */
+            /* Alligns that element by giving equal spaces between them */
+           
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Flex Box</h2>
+    <div class="con">
+
+        <div class="item" id="item1">Firts Box</div>
+        <div class="item" id="item2">Second box</div>
+        <div class="item" id="item3">Third box</div>
+        <!-- <div class="item" id="item4">Fourth Box</div>
+        <div class="item" id="item5">Fivth Box</div>
+        <div class="item" id="item6">Sixth Box</div> -->
+    </div>
+</body>
+
+</html>

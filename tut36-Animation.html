@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key-Frames And Animation</title>
+    <style>
+        .con{
+            background-color:rgb(126, 231, 122);
+            border: 4px solid rgb(0, 0, 0);
+        }
+        #box1{
+            margin: 5px;
+            border: 4px solid rgb(76, 5, 117);
+            background-color: rgb(31, 206, 206);
+            width: 100px;
+            height: 100px;
+            position: relative;
+            animation-name: sasi;
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-iteration-count: 3;
+            animation-direction:alternate;
+            animation-fill-mode:forwards;
+        }
+        #box2{
+            margin: 5px;
+            border: 4px solid rgb(76, 5, 117);
+            background-color: rgb(31, 206, 206);
+            width: 100px;
+            height: 100px;
+            position: relative;
+            animation: sasi1 3s ease-in-out 0s 3 normal forwards;
+        }
+        @keyframes sasi {
+            from{
+               width:  100px;
+            }
+            to{
+               width:  1000px;
+               background-color: crimson;
+            }
+        }
+        @keyframes sasi1 {
+            0%{
+                top: 0px;
+                left: 0px;
+                background-color:rgb(31, 206, 206);
+
+            }
+            25%{
+                top: 250px;
+                left: 0px;
+                background-color:red;
+            }
+            50%{
+                top: 250px;
+                left: 250px;
+                background-color: green
+            }
+            75%{
+                top: 0px;
+                left: 250px;
+                background-color: yellow
+            }
+            100%{
+                top: 0px;
+                left: 0px;
+                background-color:rgb(31, 206, 206);
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div id="box1"></div>
+        <div id="box2"></div>
+    </div>
+</body>
+</html>

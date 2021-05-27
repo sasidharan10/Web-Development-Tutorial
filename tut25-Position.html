@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning in CSS</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+       .con{
+            background-color: burlywood;
+            height: 2000px;
+        }
+        .box{
+            border:4px double rgb(30, 145, 30);
+            width: 90px;
+            height: 90px;
+            display: inline-block;
+        }
+         #box1{
+            position: static;
+        }
+        #box2{
+            position:absolute;
+            left: 30px;
+            top: 30px;
+            /* we can change position from the parent position */
+        }
+        #box3{
+            position: relative;
+            left: 20px;
+            top: 20px;
+             /* we can change position from its relative old position */
+        }
+        #box4{
+            position: fixed;
+            top: 100px;
+            /*It will stick to the screen while scrolling untill the container height*/
+        }
+        #box5{
+            margin:50px;
+            position: sticky;
+            top: 100px;
+            
+            /*It will stick to the screen while scrolling */
+      } 
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+        <div class="box" id="box5">5</div>
+    </div>
+</body>
+</html>

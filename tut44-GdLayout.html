@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        .con {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'cont cont cont aside'
+                'footer footer footer footer';
+        }
+
+        .box {
+            border: 2px solid black;
+            background-color: burlywood;
+        }
+
+        #navbar {
+            grid-area: navbar;
+        }
+
+        #content {
+            grid-area: cont;
+        }
+
+        #aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="con">
+        <div id="navbar" class="box">Home Services About Us</div>
+        <section id="content" class="box">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id unde officiis placeat dicta. Sit est aliquid in
+            maiores, cumque ipsa fuga iste, at amet libero praesentium ratione distinctio? Odio, deserunt. Eveniet
+            voluptate rem possimus cum eius. Commodi molestias, voluptatibus neque, quia cupiditate assumenda temporibus
+            sequi ipsa, consequatur ipsum molestiae omnis possimus aperiam? Atque odio nihil, dignissimos dolorem
+            debitis, consequatur, nemo molestias ratione placeat qui culpa maxime. Deserunt hic nemo quae? Nobis iusto
+            voluptate ducimus et vitae labore atque enim saepe tenetur dolorum eos cumque, molestias at dolorem numquam
+            ipsam accusamus, officiis ab expedita earum recusandae voluptatem. Nisi commodi officia unde.
+        </section>
+        <section id="aside" class="box">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea maiores eveniet vitae dolor similique aliquam
+            officia voluptas voluptates, quidem quam molestias omnis vel eos enim adipisci itaque non sequi porro
+            suscipit atque libero! Molestiae porro necessitatibus magni, alias facere nisi.
+        </section>
+        <footer class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit.</footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced CSS Selectors</title>
+    <style>
+        h3{
+            background-color: rgb(241, 154, 138);
+            color: black;
+            font-weight: bold;
+            padding:4px ;
+            text-align: center;
+            font-size: 30px;
+        }
+        .con{
+            text-align: center;
+        }
+        /* div p{
+            font-weight: bold;
+        }
+        div>p{
+            background-color: rgb(181, 218, 109);
+            color: rgb(126, 57, 7);
+        } */
+        div+p{
+            background-color: rgb(91, 201, 201);
+        }
+    </style>
+</head>
+<body>
+    <h3>Advanced CSS Selectors</h3>
+    <div class="con">
+        <div class="para">
+            <ul>
+                <li class="list">
+                    <p>This is inside list</p>
+                </li>
+            </ul>
+            <p>This is in para</p>
+        </div>
+        <p>this is in a container</p>
+    </div>
+    <p>This is outside container</p>
+</body>
+</html>

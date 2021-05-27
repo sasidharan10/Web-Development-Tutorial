@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#{title}</title>
+    style
+      include ../static/style.css
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/"></a>Home</li>
+            <li><a href="/"></a>About Us</li>
+            <li><a href="/"></a>Services</li>
+            <li><a href="/"></a>Contact Us</li>
+        </ul>
+    </nav>
+    <h1>ONLINE FOOD SERVICES</h1>
+    <!-- | #{content} -->
+    <form action="/" method="POST" class="items" >
+        <label for="name" >Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+        <label for="age">Age</label>
+        <input type="text" id="age" name="age" placeholder="Enter your Age">
+        <label for="gender">Gender</label>
+        <input type="text" id="gender" name="gender" placeholder="Enter your Gender">
+        <label for="address">Address</label>
+        <textarea id="address" cols="30" rows="10" name="address" placeholder="Enter your address"></textarea>
+        <button class="btn">Submit</button>
+    </form>
+</body>
+</html>

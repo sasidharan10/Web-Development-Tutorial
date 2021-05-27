@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid And Media Queries</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .con{
+            display: grid;
+            grid-gap: 3px 10px;
+            grid-template-areas:
+            'nav nav nav nav'
+            'para para para aside'
+            'footer footer footer footer'
+            ;
+            background-color: sandybrown;
+        }
+        #navbar{
+            grid-area: nav;
+            border: 2px solid black;
+            background-color: rgb(88, 168, 88);
+            margin: 4px 4px;
+        }
+        #para{
+            grid-area: para;
+            border: 2px solid black;
+            background-color: rgb(88, 168, 88);
+            margin: 4px 4px;
+        }
+        #aside{
+            grid-area: aside;
+            border: 2px solid black;
+            background-color: rgb(88, 168, 88);
+            margin: 4px 4px;
+        }
+        footer{
+            grid-area: footer;
+            border: 2px solid black;
+            background-color: rgb(88, 168, 88);
+            margin: 4px 4px;
+        }
+        @media only screen and (max-width: 360px){
+            .con{
+                grid-template-areas:
+            'nav nav nav '
+            'para para para '
+            'footer footer footer'
+            ;
+            background-color: rgb(204, 88, 165);
+            }
+            #aside{
+                display: none;
+            }
+        }
+        @media only screen and (min-width: 360px) and (max-width: 600px){
+            .con{
+                grid-template-areas:
+            'nav nav nav '
+            'para para para '
+            'aside aside aside'
+            'footer footer footer'
+            ;
+            background-color: rgb(73, 153, 207);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div id="navbar">
+            <h1>Home Services Contact About</h1>
+        </div>
+        <div id="para">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident quidem pariatur vero molestias cum illo, placeat dicta accusantium, culpa aliquam tenetur mollitia assumenda! Ex ab ea aperiam iste tenetur cupiditate debitis amet sapiente adipisci dolorum! Laboriosam beatae laudantium quis modi, maxime libero illum molestiae facilis iste vel neque, dicta vitae et, aliquid placeat exercitationem hic sed quos? Iusto delectus vitae est iste libero quia maxime ullam modi laboriosam consequatur, at nostrum doloremque recusandae rerum? Blanditiis veritatis ipsam consequatur? Molestias voluptatem assumenda reprehenderit itaque sed recusandae deserunt! A delectus fugiat, natus accusamus ipsa maxime reprehenderit voluptatibus blanditiis. Quae voluptatibus ex nobis sint placeat odit unde? Reprehenderit iusto consequuntur rem commodi dolore at, laudantium molestias harum quod et dolorem accusantium facilis sunt. Debitis voluptates veniam temporibus maxime sit eligendi magnam nulla beatae quam in nesciunt amet officiis quos nobis incidunt autem, recusandae cupiditate cum! Doloribus illum soluta rem, error labore facere distinctio molestiae libero pariatur ducimus minima omnis aliquam ratione repellendus quae ullam quas amet magni quia? Blanditiis id nesciunt laudantium, odio maxime quas sit quisquam qui omnis repellendus voluptate neque! Nesciunt, autem repellat, quaerat, tempora laborum beatae rem dolore qui officia laboriosam possimus eius suscipit ipsum dolores nobis unde facere dicta?
+        </div>
+        <div id="aside">
+            <h3>About</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ducimus laborum repudiandae veritatis aliquid libero corrupti ullam provident laboriosam molestias. Quibusdam, a? Quam, doloribus? Quae consequuntur repellendus architecto commodi ut vero illum facere aspernatur rem, tempore obcaecati officiis similique modi at, fuga saepe provident repellat consequatur excepturi voluptatum. Autem, tempore?</p>
+        </div>
+        <footer>Copyright &copy; Online.com 2021</footer>
+    </div>
+    <script>
+        // Write your Javascript here
+        console.log("Hello Word");
+        
+    </script>
+</body>
+</html>

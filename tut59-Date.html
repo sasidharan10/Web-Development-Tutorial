@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and Time</title>
+    <style>
+        .con{
+            border: 2px groove black;
+            padding: 23px;
+            margin: 4px;
+            font-weight: bold;
+            background-color: burlywood;
+            color: black;
+            text-align: center;
+        }
+        #tm{
+            color: brown;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        The time is : <span id="tm"></span>
+    </div>
+    <script>
+        // let now = new Date();  // current date
+        // console.log(now);
+
+        // let dt = new Date(0);  // starting of the time system
+        // console.log(dt);
+
+        // we can set date : 
+        // let dat = new Date("2021-4-12");
+        // console.log(dat);
+
+        //Syntax :  Date(year, month, day, hour, minutes, seconds, milliseconds);
+        // month range = 0-11 (0 = jan)
+        // week range = 0-6 (0 = sunday)
+        let newdt = new Date(2021,0,12,19,30,0,0);
+        console.log(newdt);
+
+        let yr = newdt.getFullYear();
+        console.log(yr);
+
+        let mt = newdt.getMonth();
+        console.log(mt);
+        
+        let date = newdt.getDate();
+        console.log(date);
+
+        let day = newdt.getDay();
+        console.log(day);
+
+        let hr = newdt.getHours();
+        console.log(hr);
+
+        let mon = newdt.getMinutes();
+        console.log(mon);
+
+        let sec = newdt.getSeconds();
+        console.log(sec);
+
+        let ml = newdt.getMilliseconds();
+        console.log(ml);
+
+        let fulldate = newdt.getDate();
+        console.log(fulldate);
+
+        newdt.setDate(41);
+        newdt.setMinutes(35);
+        newdt.setHours(5);
+        console.log(newdt);
+
+        // Display live time
+        function updatetime()
+        {
+            tm.innerHTML=new Date();
+        }
+        setInterval(updatetime, 1000);
+    </script>
+</body>
+</html>

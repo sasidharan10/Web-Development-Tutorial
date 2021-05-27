@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+        .model{
+            background-color: rgb(236, 245, 184);
+           /* margin: 50px 50px 50px 50px; /* top,right botttom left (clockwise)*/
+            margin: 10px 50px; /* top,right botttom left (clockwise)*/
+            padding: 20px 20px 20px 20px; /* top,right botttom left (clockwise)*/
+            border:14px groove rgb(250, 233, 3);
+            border-radius: 20px;
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Box Model</h2>
+    <div class="model">
+        <p id="first">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio asperiores error numquam magni. Repellendus debitis est modi quasi corrupti autem eaque quidem voluptatibus, quae deserunt. Exercitationem, ratione eveniet, enim aliquid veniam incidunt eligendi magni similique eum tempora quia distinctio atque?</p>
+    </div>
+    <div class="model">
+        <p id="second">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio asperiores error numquam magni. Repellendus debitis est modi quasi corrupti autem eaque quidem voluptatibus, quae deserunt. Exercitationem, ratione eveniet, enim aliquid veniam incidunt eligendi magni similique eum tempora quia distinctio atque?</p>
+    </div>
+    <div class="model">
+        <p id="third">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio asperiores error numquam magni. Repellendus debitis est modi quasi corrupti autem eaque quidem voluptatibus, quae deserunt. Exercitationem, ratione eveniet, enim aliquid veniam incidunt eligendi magni similique eum tempora quia distinctio atque?</p>
+    </div>
+    
+</body>
+</html>

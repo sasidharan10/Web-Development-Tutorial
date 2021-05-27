@@ -1,0 +1,3 @@
+db.items.insertOne({name:"samsung s10",price:12000,rating:4.5,stock:250,sold:1203})
+
+db.items.insertMany([{name:"samsung s10",price:12000,rating:4.5,stock:250,sold:1203},{name:"moto g6",price:1000,rating:4.1,stock:550,sold:603},{name:"apple 12",price:130000,rating:4.0,stock:2500,sold:240}])

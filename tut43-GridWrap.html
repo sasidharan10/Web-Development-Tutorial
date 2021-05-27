@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Wrapping</title>
+    <style>
+        .con{
+            /* display: flex;
+            flex-wrap: wrap; */
+
+            /* almost same as flex */
+
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(250px,300px));
+
+            /* takes the size of max and wraps */
+        }
+        .box{
+            border: 2px solid black;
+            background-color: burlywood;
+            /* height: 100px;
+            width: 100px; */
+            margin: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="box">This is a box-1</div>
+        <div class="box">This is a box-2</div>
+        <div class="box">This is a box-3</div>
+        <div class="box">This is a box-4</div>
+        <div class="box">This is a box-5</div>
+        <div class="box">This is a box-6</div>
+        <div class="box">This is a box-7</div>
+        <div class="box">This is a box-8</div>
+        <div class="box">This is a box-9</div>
+        <div class="box">This is a box-10</div>
+    </div>
+</body>
+</html>

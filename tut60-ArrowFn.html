@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions</title>
+</head>
+
+<body>
+    <div class="con">
+        <h1>Arrow Functions</h1>
+    </div>
+    <script>
+        // function greet()
+        // {
+        //     console.log('good morning');
+        // }
+        // greet();
+
+        // Using arrow function 
+
+        greet = () => {
+            console.log('good morning');
+        }
+        greet();
+
+        setTimeout(() => {
+            console.log('Set Time Out');
+        }, 3000);
+
+        // let sum1 = (a,b) =>{
+        //     return a+b;
+        // }
+
+        // This can be written as : 
+
+        let sum1 = (a, b) => a + b;  // no need of braces, the statement will get returned
+
+        let sum2 = a => a / 2;  // for 1 argument, no need of parenthesis
+
+        // let obj = {
+        //     names : ['sasi', 'ram','guru'],
+        //     speak(){
+        //         this.names.forEach(student => {
+        //             console.log("Hello "+student);
+        //         });
+        //     }
+        // }
+        // obj.speak();
+
+        // This can be written as : 
+
+        let obj = {
+            names: ['sasi', 'ram', 'guru'],
+            greeting: 'Good morning',
+            speak() {
+                this.names.forEach(student => {
+                    console.log(this.greeting + " Hello " + student);
+                });
+            }
+        }
+        obj.speak();
+
+        //    NOTE : we use this.greeting in arrow function because here 'this' refers to the parent function, but if we use the same this.greeting in normal function, it will show undefined because here, 'this' refers to the same function(inside that function).
+
+    </script>
+</body>
+
+</html>

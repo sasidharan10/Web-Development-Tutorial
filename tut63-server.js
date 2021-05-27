@@ -1,0 +1,71 @@
+// console.log('hello world');
+
+const http = require('http');
+
+const hostname = '127.0.0.1';
+const port = 3000;
+
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/html');
+  res.end(`<!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Box Shadow And Text Shadow</title>
+      <style>
+          body{
+              text-align: center;
+          }
+          h1{
+              font-size: 3rem;
+              font-weight: bold;
+              color: darkmagenta;
+              text-shadow: 4px 4px 7px rgb(185, 64, 233);
+          }
+          .con{
+              
+              margin: 20px;
+              padding: 20px;
+              background-color: rgb(128, 241, 236);
+              box-shadow:5px 5px 4px 1px rgb(19, 164, 221);
+          }
+          h3{
+              display: block;
+          }
+          #para2{
+              background-color: rgb(84, 236, 92);
+              box-shadow: 8px 8px 3px rgb(10 94 17), 14px 14px 3px rgb(62 222 59);
+              /* multiple shaodw */
+          }
+          #para3{
+              background-color: rgb(240, 232, 128);
+              box-shadow: inset 8px 8px 3px rgb(199 199 31), inset 14px 14px 3px rgb(205 230 63);
+              /* inset */
+              /* multiple shadow */
+          }
+      </style>
+  </head>
+  <body>
+      <h1>Box Shadow And Text Shadow</h1>
+      <div class="con" id="para1">
+          <h3>Para First</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae alias ea quo architecto maiores quidem suscipit! Incidunt voluptas natus commodi placeat repellendus deleniti optio voluptatum. Quaerat deserunt corrupti veritatis soluta ex? Magnam quos quis minima, eveniet illum nostrum tempore nobis.</p>
+      </div>
+      <div class="con" id="para2">
+          <h3>Para Second</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae alias ea quo architecto maiores quidem suscipit! Incidunt voluptas natus commodi placeat repellendus deleniti optio voluptatum. Quaerat deserunt corrupti veritatis soluta ex? Magnam quos quis minima, eveniet illum nostrum tempore nobis.</p>
+      </div>
+      <div class="con" id="para3">
+          <h3>Para Third</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae alias ea quo architecto maiores quidem suscipit! Incidunt voluptas natus commodi placeat repellendus deleniti optio voluptatum. Quaerat deserunt corrupti veritatis soluta ex? Magnam quos quis minima, eveniet illum nostrum tempore nobis.</p>
+      </div>
+  </body>
+  </html>`);
+});
+
+server.listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}/`);
+});

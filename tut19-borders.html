@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders and Backgrounds</title>
+    <style>
+        #first {
+            background-color: rgb(223, 241, 117);
+            height: 100px;
+            width: 200px;
+            border-radius: 10px;
+            border: 10px double rgb(230, 89, 235);
+            /* border-width: 10px;
+            border-style: double;
+            border-color: rgb(145, 48, 224); */
+        }
+
+        #second {
+            background-color: rgb(121, 228, 247);
+            height: 100px;
+            width: 200px;
+            border: 10px groove rgb(39, 245, 84);
+            border-top-color: rgb(240, 69, 69);
+            border-bottom-color: rgb(207, 235, 143);
+            border-left-color: rgb(116, 228, 121);
+            border-right-color: rgb(184, 110, 245);
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        #third {
+            font-weight: bolder;
+            height: 400px;
+            width: 400px;
+            background-image: url(/mike.jpg);
+            border: 5px dotted rgb(77, 188, 216);
+            background-repeat: no-repeat;
+            /* background-position: center left; */
+            background-position: 100px 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Borders and Backgrounds</h3>
+
+    <p id="first">This is first paragraph</p>
+    <p id="second">This is second paragraph</p>
+    <p id="third">This is third paragraph</p>
+</body>
+
+</html>

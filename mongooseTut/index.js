@@ -38,7 +38,7 @@ const shyam = new cricket({ name: "shyam", jerseyNo: 14, role: "Bowler" });
 // raj.speak();
 // shyam.speak();
 
-// finally saing the object to the database using the save(err,anyArgumentName)
+// finally saving the object to the database using the save(err,anyArgumentName)
 raj.save(function (err, arg) {
   if (err) return console.error(err);
   arg.speak();

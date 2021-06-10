@@ -24,6 +24,7 @@ app.get("/", (req, res) => {
 });
 
 app.post("/", (req, res) => {
+    console.log(req.body)
     let form = req.body;
     let name = form.name;
     let age = form.age;

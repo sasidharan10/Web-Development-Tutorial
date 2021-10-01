@@ -9,6 +9,7 @@
   "author": "sasi",
   "license": "ISC",
   "dependencies": {
-    "mongoose": "^5.12.11"
+    "mongoose": "^6.0.8",
+    "path-parse": "^1.0.7"
   }
 }

@@ -16,7 +16,8 @@
         "titleBar.inactiveForeground": "#e7e7e799",
         "sash.hoverBorder": "#1a4425",
         "statusBarItem.remoteBackground": "#0c1f11",
-        "statusBarItem.remoteForeground": "#e7e7e7"
+        "statusBarItem.remoteForeground": "#e7e7e7",
+        "commandCenter.border": "#e7e7e799"
     },
     "peacock.color": "#0c1f11",
     "liveServer.settings.port": 5501

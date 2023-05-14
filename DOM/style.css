@@ -1,0 +1,34 @@
+body{
+    box-sizing: border-box;
+    background-color: aliceblue;
+    margin: 0;
+}
+.container{
+    background-color: rgb(193, 245, 193);
+    text-align: center;
+    font-family: sans-serif;
+}
+.heading > h1{
+    font-size: 3rem;
+    font-weight: bolder;
+    margin: 0;
+    color: rgb(3, 103, 136);
+    display: block;
+}
+.content .list{
+    list-style: none;
+    font-size: 2rem;
+}
+.content .list li{
+    margin-top: 10px;
+}
+
+.dummy{
+    color: rgb(6, 204, 138);
+    background-color: rgb(158, 255, 223);
+}
+
+.d2{
+    color: rgb(90, 7, 7);
+    background-color: rgb(252, 252, 184);
+}
